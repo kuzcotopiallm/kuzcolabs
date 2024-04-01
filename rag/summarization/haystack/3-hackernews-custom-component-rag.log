@@ -1,0 +1,132 @@
+INFO     GENERATE_PARAMS=                                                                                                                
+{   'max_new_tokens': 3533,
+    'temperature': 1,
+    'temperature_last': False,
+    'dynamic_temperature': False,
+    'dynatemp_low': 1,
+    'dynatemp_high': 1,
+    'dynatemp_exponent': 1,
+    'smoothing_factor': 0,
+    'smoothing_curve': 1,
+    'top_p': 1,
+    'min_p': 0,
+    'top_k': 0,
+    'repetition_penalty': 1,
+    'presence_penalty': 0,
+    'frequency_penalty': 0,
+    'repetition_penalty_range': 1024,
+    'typical_p': 1,
+    'tfs': 1,
+    'top_a': 0,
+    'guidance_scale': 1,
+    'penalty_alpha': 0,
+    'mirostat_mode': 0,
+    'mirostat_tau': 5,
+    'mirostat_eta': 0.1,
+    'do_sample': True,
+    'encoder_repetition_penalty': 1,
+    'no_repeat_ngram_size': 0,
+    'min_length': 0,
+    'num_beams': 1,
+    'length_penalty': 1,
+    'early_stopping': False,
+    'use_cache': True,
+    'eos_token_id': [2],
+    'stopping_criteria': [   <modules.callbacks._StopEverythingStoppingCriteria object at 0x7f9d433dff90>],
+    'logits_processor': []}
+
+INFO     PROMPT=                                                                                                                         
+<s> [INST] You will be provided a few of the latest posts in HakcerNews, followed by their URL.
+For each post, provide a brief summary followed by the URL the full post can be found in.
+
+Posts:
+
+  P
+
+astoral places that used to host horse farms and tractor pulls will soon power the artificial intelligence we use for everything from streaming services to driverless cars.
+
+That is because AI requires real infrastructure, and the capital investment needed to build that infrastructure does not come cheap.
+
+Newmark, in its 2023 U.S. Data Center Market Overview released in January 2024, attempted to quantify the impact of AI on data center investment — and the results are staggering. The top five hyperscalers spent $158 billion on data centers in 2022, led by Amazon’s $64 billion, Google’s $32 billion, and Meta’s $31 billion. Microsoft chipped in $25 billion, while Oracle added $6 billion. Just five years earlier, these same five firms spent a combined $42 billion.
+
+“Cloud capex for top hyperscalers has grown by 30% CAGR over the last five years,” Newmark states. “AI’s impact on the data center industry is still in very early innings. On a macro scale, data center demand in the U.S. is expected to reach 35 GW by 2030, up from 17 GW in 2022.”
+
+In other words, data center demand in the U.S. will double over the next six years; and implementation of AI applications will be at the core of that demand. At their current rate of expansion, hyperscalers will top $1 trillion in spending on new facilities by 2030.
+
+While Tier 1 markets like Northern Virginia, Chicago, Atlanta and Dallas will continue to rake in sizable investments, a new player has emerged on the scene: green acres.
+
+Recent project announcements shed light on this trend. Amazon Web Services (AWS), the sector’s biggest spender, is investing $35 billion into new data center infrastructure throughout Virginia, with the bulk of that going to the state’s interior counties. AWS also announced that it plans to spend $10 billion to construct two data center campuses in Madison County, Mississippi, near the capital of Jackson.
+
+Meta announced February 2 that it plans to invest $37 billion to expand its digital infrastructure this year. Two of the company’s largest projects are in Kuna, Idaho, and Temple, Texas. Meta and AWS are spending billions to erect new data center campuses in Central Ohio, joining companies like Google and Microsoft in that exclusive billionaires’ club.
+
+Microsoft has submitted plans to build up to $10 billion in new data center campuses on two sites in New Albany, Ohio, while Google will soon top $3.7 billion in spending on campuses in Columbus, New Albany and Lancaster.
+
+Other mega-deals in 2024 include Google’s $600 million project in Wasco County, Oregon, and a $220 million campus for QTS in Fort Worth, Texas.
+
+Byte Handlers Are Buying the Farm
+
+Increasingly, these projects are entering parts of America that have never seen digital infrastructure spending of this scale.
+
+Case in point is Culpeper County, Virginia, 90 minutes south of Washington, D.C. Cielo Digital has received approval to build a 1.4-million-sq.-ft. data center campus on 121 acres in a rural pasture that is being rezoned as part of the county’s McDevitt Drive Technology Zone.
+
+According to plans submitted by Cielo, the company could invest as much as $7.5 billion over the next three to five years to build the campus and install equipment.
+
+Cielo has company. CloudHQ will deliver a 2.1-million-sq.-ft. campus on 95 acres in Culpeper County in 2025, taking 275 MW of IT load power. It will be just 1,000 feet from the Network Access Point (NAP) of the Capital Region even though it is 65 miles from the nation’s capital.
+
+For a rural farming community of 52,552 people, investments like these are game-changing for the local economy, says Bryan Rothamel, director of Culpeper County Economic Development.
+
+“We have actively courted data centers, and we have won them,” says Rothamel. “We have seen almost 10 million square feet of approved data center space in the past two years. Cielo is our latest one and perhaps our last one in our incentivized area. I worked with the company over the past year to find a property.”
+
+Rothamel says that even though Culpeper is remote, “we are only an hour south of Dulles International Airport, and U.S. Highway 29 goes through our county.” He adds that “this is not our first data center. Equinix built a data center here in 2008, and SWIFT operates one of its three data centers in the world here.”
+
+SWIFT stands for the Society for Worldwide Interbank Financial Telecommunications. It is operated by a Belgian company for the purpose of executing financial transactions and payments between banks worldwide.
+
+From Cows to Carbon-Neutral Assets
+
+Brent Mayo, executive managing director of data center and digital infrastructure capital markets at Newmark, says that remote locations like Culpeper will become the norm as cloud hyperscalers scout virgin territory for their massive projects.
+
+“We anticipate more nascent markets to expand rapidly in the coming years, driven by power availability and deliverability,” says Mayo. “Latency-sensitive and latency-non-sensitive data centers bifurcate the market. We expect that trend to continue, like what Amazon is doing in Mississippi. Demand is being driven by applications in the evolving world of AI and the highest power requirements. Power costs and operating costs are driving users to cheaper and more remote locations.”
+
+These projects will demand rapid deployment of energy infrastructure, says Mayo. “On both power and cooling, you are going to see new sources deployed,” he notes. “The grid is under significant strain and new supply is slowed. You will see more generation assets developed. They also must meet the carbon reduction goals of these companies. Solar, wind and hydroelectric power supported by battery storage will be adopted in coming years.”
+
+Emerging markets to watch, he says, include Columbus, Charlotte, Nashville and Minneapolis. “This unprecedented demand is shaped by power availability,” he adds. “The grid is getting constrained. What we know for sure is that we will need more carbon-neutral assets.”
+  URL: https://siteselection.com/issues/2024/mar/how-data-centers-are-reshaping-rural-america.cfm
+
+  This research explores a scenario in which a vulnerable device is compromised by an attacker who plants the code to implement Fake Lockdown Mode. When a high-risk user (e.g., journalists, government officials, executives) of the compromised device initiates Lockdown Mode, they trigger the attacker's code that implements the visual cues of Lockdown Mode, but makes no changes to the device’s configuration. Has your Lockdown Mode been tampered with? Apple's Lockdown mode in iOS 16 is a useful feature for certain situations, but if your phone has already been compromised, Lockdown Mode won’t protect you. This blog post delves into our research on Fake Lockdown Mode which shows that if a hacker has already infiltrated your device, they can cause Lockdown Mode to be “bypassed” when you trigger its activation. The introduction of Lockdown Mode Apple introduced Lockdown Mode in September 2022 in response to the surge in global cyber attack campaigns. As shown below and according to Google's Threat Analysis Group (TAG), the years 2021 and 2022 saw the highest number of in-the-wild zero-day attacks detected since they began tracking such incidents in mid-2014. Notably, one of the most infamous spyware brands, Pegasus, can infect the latest iPhone without requiring any user interaction, known as a zero-click attack. Despite Apple's ongoing efforts to enhance its security architecture in recent years, operators of Pegasus have demonstrated a remarkable ability to discover new vulnerabilities and execute zero-click attacks. This situation raised concerns among users, prompting the development of Lockdown Mode as a solution to counter this growing trend, as well as providing reassurance for iPhone users.
+
+Lockdown Mode works by minimizing the functionality that is remotely accessible to potential attackers. This approach, while straightforward, is robust because the less code you expose, the less code attackers can leverage to exploit vulnerabilities. Apple describes Lockdown Mode as: Lockdown Mode is an optional, extreme protection that’s designed for the very few individuals who, because of who they are or what they do, might be personally targeted by some of the most sophisticated digital threats. Most people are never targeted by attacks of this nature.
+
+
+
+When Lockdown Mode is enabled, your device won’t function like it typically does. To reduce the attack surface that potentially could be exploited by highly targeted mercenary spyware, certain apps, websites, and features are strictly limited for security and some experiences might not be available at all.
+
+
+
+Lockdown Mode is available in iOS 16 or later, iPadOS 16 or later, watchOS 10 or later, and macOS Ventura or later. Additional protections are available in iOS 17, iPadOS 17, watchOS 10, and macOS Sonoma. For a complete set of protections, update your devices to the latest software before turning on Lockdown Mode. For example, Lockdown Mode adopts a restricted web browser engine for use with captive portals. A captive portal is a web page that typically pops up when you connect to a public Wi-Fi network and is often used for advertising or authentication purposes. The web engine behind captive portals imposes more constraints, with one prominent restriction being the disabling of Just-In-Time (JIT) JavaScript compilation for security considerations. This restriction also extends to Lockdown Mode. Consequently, the use of Lockdown Mode has been found to result in performance and responsiveness reductions of up to 95 percent in web applications when it comes to the JavaScript engine. Turning on Lockdown Mode will remove support for particular file formats, primarily due to their history of exploitation. It will also disable convenience features, for example, no longer showing previews of links sent through Messages, disabling shared albums and preventing the installation of configuration profiles and enrollment in mobile device management (MDM) software. The image below, from blacktop on GitHub, lists what Lockdown Mode disables.
+
+Fast forward to 2023 — the effectiveness of Lockdown Mode has become apparent. In September 2023, CitizenLab identified an actively exploited zero-click exploit chain called BLASTPASS, which targeted the latest iOS 16 version available at the time. Both CitizenLab and Apple have affirmed that enabling Lockdown Mode will block this particular attack. While they haven't disclosed further details to avoid potential misuse, it's likely that some level of user interaction is now required to trigger the exploit after Lockdown Mode is enabled, thus disabling the zero-click capability of the attack, allowing users an opportunity to react.
+
+Limitations of Lockdown Mode While Lockdown Mode has proven its effectiveness in certain scenarios, our evaluation of Lockdown Mode emphasizes that it won’t stop an attack that has already been initiated on the device. iPhone users should be aware that if their device has already been infected, activating Lockdown Mode will not affect a trojan that has already breached the system. Lockdown Mode's primary purpose is to reduce potential attack vectors, rather than add additional security measures to prevent the execution of malicious payloads. In the rest of the article, we will demonstrate how, in the scenario of an iPhone that's already been infected, Lockdown Mode might be manipulated, potentially giving users a false sense of security. The switch As shown below, we begin by examining the Lockdown Mode toggle within the Settings app. Many of the actions happening behind the scenes are invisible to the user, except the reboot. We conducted a search for the "lockdownMode" string within the dyldcache and found that a framework called PrivacySettingsUI has implemented two C functions with the following names: bool isLockdownModeEnabled() void setLockdownModeEnabled(bool)
+
+Within the void setLockdownModeEnabled(bool) function, it configures the Boolean value of the key LDMGlobalEnabled to "Yes" via NSUserDefaults API. By monitoring file change events, we found the path of this file: /var/mobile/Library/Preferences/.GlobalPreferences.plist This single value serves as the primary indicator of whether the system considers Lockdown Mode to be active or not. By manually overwriting the user’s defaults database, setting this value to "Yes", achieved through a command like [[NSUserDefaults standardUserDefaults] setObject: [NSNumber numberWithBool: 1] forKey:@"LDMGlobalEnabled" inDomain: @"NSGlobalDomain"] This command can be executed in nearly any process outside of the sandbox. Changes can be observed in the return values of numerous functions, you can find these functions by running "grep -i lockdownMode'' within the dyldcache.
+
+-[PUILockdownModeController lockdownModeEnabled] +[SUUtility isLockdownModeEnabled] +[WBSUIFeatureAvailability isLockdownModeEnabledForSafari] +[WKProcessPool _lockdownModeEnabledGloballyForTesting] -[WKWebpagePreferences isLockdownModeEnabled] -[MCProfileConnection(Misc) isLockdownModeEnabled] +[NSUserDefaults(Email) em_lockdownModeEnabled] -[TUMomentsController lockdownModeEnabled] -[PUILockdownModeController lockdownModeEnabled] +[SUUtility isLockdownModeEnabled] +[WBSUIFeatureAvailability isLockdownModeEnabledForSafari] +[WKProcessPool _lockdownModeEnabledGloballyForTesting] -[WKWebpagePreferences isLockdownModeEnabled] -[MCProfileConnection(Misc) isLockdownModeEnabled] +[NSUserDefaults(Email) em_lockdownModeEnabled] -[TUMomentsController lockdownModeEnabled]
+
+A few functions, such as PUILockdownModeController , require initializing a new instance because file reading occurs in the initialization method. Nevertheless, after these processes are restarted, all return positive results which activate Lockdown Mode across the whole device, and this adjustment takes effect without a full device reboot. This confirms our suspicion that, as of iOS 16.5, Lockdown Mode remains to function as a userspace artifact (the kernel is not aware of it). We did not find any code implementation related to Lockdown Mode within the iOS 16.5 kernel. A system reboot is entirely not needed for activating or deactivating Lockdown Mode at this stage. However, that's just for now. Referring to insights from the "Anatomy of Lockdown Mode" by blacktop, Since iOS 17, Apple has elevated Lockdown Mode to the kernel level. It now includes its own background daemon, found at /System/Library/PrivateFrameworks/LockdownMode.framework/lockdownmoded, and a KEXT called com.apple.driver.AppleLockdownMode . This strategic move is a great step in enhancing security, as changes made by Lockdown Mode in the kernel typically cannot be undone without undergoing a system reboot, thanks to existing security mitigations. Dudded the reboot Back to the topic of manipulating Lockdown Mode, our objective regarding the Settings app is to render Lockdown Mode ineffective and replace system reboot with a user-space reboot. This demonstration aims to showcase how malware could trick the user. In the case of an infected phone, there are no safeguards in place to stop the malware from running in the background, whether the user activates Lockdown Mode or not.
+
+When a user opts to turn on Lockdown Mode in the Settings app, that will trigger the method -[PUILockdownModeController setLockdownModeGloballyEnabled:] , and inside, you can see the sequence of events provides a clear overview of how Lockdown Mode functions. It begins by deactivating shared albums and link previews, followed by the disabling of developer mode and enabling of USB restricted mode. Profile installation is also disabled, and the LDMGlobalEnabled key in the user's defaults database is set to "YES", with the changes synchronized. Inside the _DaemonReady function , CFNotificationCenterPostNotification() is invoked to notify WebKit processes about the configuration change. Finally, the device is rebooted. Given that -[PUILockdownModeController setLockdownModeGloballyEnabled:] is an objective-C method, you can utilize the method_exchangeImplementations Method Hooking technique to replace its content. What we did is straightforward: Whenever the user turns on the Lockdown Mode, a file named /fakelockdownmode_on is created as an indicator, and a userspace reboot is initiated. We also hooked other functions, such as - [PUILockdownModeController lockdownModeEnabled] , to return results based on the existence of this file.
+
+This way, the device did not really reboot, and allowed our injected code to maintain adaptable control over the Lockdown Mode. This also means that even malware lacking persistence can persistently run and monitor the user. Fake Lockdown Mode in Safari
+
+To further demonstrate manipulation of the Lockdown Mode, we chose Safari, one of the most commonly used applications. When a user is browsing a website using Safari, they will observe a conspicuous label that reads "Lockdown Enabled". This label serves as an indicator that a captive portal version of the web engine is used to render the current webpage. If, for any reason, the regular web engine is used instead, Safari will prominently display "Lockdown Off" in a red, attention-grabbing font. This scenario happens when a user is browsing a trusted website, a configuration that can be adjusted in the website settings. Safari relies entirely on a single function, +[WBSUIFeatureAvailability isLockdownModeEnabledForSafari] , to determine the status of Lockdown Mode. By hooking this function, we then can make this function return desired results at different scenarios. For example, we can make it return "No" when making decisions about whether to use the captive portal web engine and "Yes” when determining the appearance of surface-level elements, like the "Lockdown Ready" label in the User Interface.
+
+Now, Safari will behave as if all websites are trusted, and we need to take some steps to alter the "Lockdown Off" label. To accomplish this, we first search for the string "Lockdown Off" and locate the function called WBSAnnotationStringForLockdownModeStatus , By monitoring its backtrace, we see it was invoked by - [SFLockdownStatusBar _updateLabelWithLockdownStatus:] , an objective-C method that can be conveniently hooked. We proceed to modify this function to display "Lockdown Enabled" when it would normally display "Lockdown Off".
+  URL: https://www.jamf.com/blog/fake-lockdown-mode/
+
+  Subscribe to receive notifications of new posts:
+  URL: https://blog.cloudflare.com/es-es-cloudflare-verifies-code-whatsapp-web-serves-users-es-es [/INST]
+
+INFO     WARPERS=                                                                                                                        
+[]
+
+Output generated in 8.64 seconds (29.05 tokens/s, 251 tokens, context 4467, seed 1896960607)

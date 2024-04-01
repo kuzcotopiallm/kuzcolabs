@@ -1,0 +1,111 @@
+INFO     GENERATE_PARAMS=                                                                                                    
+{   'max_new_tokens': 31856,
+    'temperature': 0.1,
+    'temperature_last': False,
+    'dynamic_temperature': False,
+    'dynatemp_low': 1,
+    'dynatemp_high': 1,
+    'dynatemp_exponent': 1,
+    'smoothing_factor': 0,
+    'smoothing_curve': 1,
+    'top_p': 1,
+    'min_p': 0,
+    'top_k': 0,
+    'repetition_penalty': 1,
+    'presence_penalty': 0,
+    'frequency_penalty': 0,
+    'repetition_penalty_range': 1024,
+    'typical_p': 1,
+    'tfs': 1,
+    'top_a': 0,
+    'guidance_scale': 1,
+    'penalty_alpha': 0,
+    'mirostat_mode': 0,
+    'mirostat_tau': 5,
+    'mirostat_eta': 0.1,
+    'do_sample': True,
+    'encoder_repetition_penalty': 1,
+    'no_repeat_ngram_size': 0,
+    'min_length': 0,
+    'num_beams': 1,
+    'length_penalty': 1,
+    'early_stopping': False,
+    'use_cache': True,
+    'eos_token_id': [2],
+    'stopping_criteria': [   <modules.callbacks._StopEverythingStoppingCriteria object at 0x7f69adc4f810>],
+    'logits_processor': []}
+
+INFO     PROMPT=                                                                                                             
+<s> [INST] Context information is below.
+---------------------
+total_pages: 77
+file_path: ./data/llama2.pdf
+source: 2
+
+. . .
+58
+A.5 Data Annotation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+72
+A.6 Dataset Contamination . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+75
+A.7 Model Card
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+77
+2
+
+total_pages: 77
+file_path: ./data/llama2.pdf
+source: 2
+
+. . . . . . . .
+23
+4.3
+Red Teaming . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+28
+4.4
+Safety Evaluation of Llama 2-Chat . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+29
+5
+Discussion
+32
+5.1
+Learnings and Observations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+32
+5.2
+Limitations and Ethical Considerations
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+34
+5.3
+Responsible Release Strategy
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+35
+6
+Related Work
+35
+7
+Conclusion
+36
+A Appendix
+46
+A.1 Contributions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+46
+A.2 Additional Details for Pretraining . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+47
+A.3 Additional Details for Fine-tuning
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+51
+A.4 Additional Details for Safety . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+58
+A.5 Data Annotation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+72
+A.6 Dataset Contamination . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+75
+A.7 Model Card
+.
+---------------------
+Given the context information and not prior knowledge, answer the query.
+Query: What are the potential risks associated with the use of Llama 2 as mentioned in the context?
+Answer: [/INST]
+
+INFO     WARPERS= 
+Output generated in 3.02 seconds (67.52 tokens/s, 204 tokens, context 912, seed 1901871882)
