@@ -1,0 +1,137 @@
+INFO     GENERATE_PARAMS=                                                                                                    
+{   'max_new_tokens': 30888,
+    'temperature': 0.1,
+    'temperature_last': False,
+    'dynamic_temperature': False,
+    'dynatemp_low': 1,
+    'dynatemp_high': 1,
+    'dynatemp_exponent': 1,
+    'smoothing_factor': 0,
+    'smoothing_curve': 1,
+    'top_p': 1,
+    'min_p': 0,
+    'top_k': 0,
+    'repetition_penalty': 1,
+    'presence_penalty': 0,
+    'frequency_penalty': 0,
+    'repetition_penalty_range': 1024,
+    'typical_p': 1,
+    'tfs': 1,
+    'top_a': 0,
+    'guidance_scale': 1,
+    'penalty_alpha': 0,
+    'mirostat_mode': 0,
+    'mirostat_tau': 5,
+    'mirostat_eta': 0.1,
+    'do_sample': True,
+    'encoder_repetition_penalty': 1,
+    'no_repeat_ngram_size': 0,
+    'min_length': 0,
+    'num_beams': 1,
+    'length_penalty': 1,
+    'early_stopping': False,
+    'use_cache': True,
+    'eos_token_id': [2],
+    'stopping_criteria': [   <modules.callbacks._StopEverythingStoppingCriteria object at 0x7f69acba3b90>],
+    'logits_processor': []}
+
+INFO     PROMPT=                                                                                                             
+<s> [INST] Context information is below.
+---------------------
+total_pages: 77
+file_path: ./data/llama2.pdf
+source: 4
+
+Figure 3: Safety human evaluation results for Llama 2-Chat compared to other open-source and closed-
+source models. Human raters judged model generations for safety violations across ~2,000 adversarial
+prompts consisting of both single and multi-turn prompts. More details can be found in Section 4.4. It is
+important to caveat these safety results with the inherent bias of LLM evaluations due to limitations of the
+prompt set, subjectivity of the review guidelines, and subjectivity of individual raters. Additionally, these
+safety evaluations are performed using content standards that are likely to be biased towards the Llama
+2-Chat models.
+We are releasing the following models to the general public for research and commercial use‡:
+1. Llama 2, an updated version of Llama 1, trained on a new mix of publicly available data. We also
+increased the size of the pretraining corpus by 40%, doubled the context length of the model, and
+adopted grouped-query attention (Ainslie et al., 2023). We are releasing variants of Llama 2 with
+7B, 13B, and 70B parameters. We have also trained 34B variants, which we report on in this paper
+but are not releasing.§
+2. Llama 2-Chat, a fine-tuned version of Llama 2 that is optimized for dialogue use cases. We release
+variants of this model with 7B, 13B, and 70B parameters as well.
+We believe that the open release of LLMs, when done safely, will be a net benefit to society. Like all LLMs,
+Llama 2 is a new technology that carries potential risks with use (Bender et al., 2021b; Weidinger et al., 2021;
+Solaiman et al., 2023). Testing conducted to date has been in English and has not — and could not — cover
+all scenarios. Therefore, before deploying any applications of Llama 2-Chat, developers should perform
+safety testing and tuning tailored to their specific applications of the model. We provide a responsible use
+guide¶ and code examples‖ to facilitate the safe deployment of Llama 2 and Llama 2-Chat. More details of
+our responsible release strategy can be found in Section 5.3.
+The remainder of this paper describes our pretraining methodology (Section 2), fine-tuning methodology
+(Section 3), approach to model safety (Section 4), key observations and insights (Section 5), relevant related
+work (Section 6), and conclusions (Section 7).
+‡https://ai.meta.com/resources/models-and-libraries/llama/
+§We are delaying the release of the 34B model due to a lack of time to sufficiently red team.
+¶https://ai.meta.com/llama
+‖https://github.com/facebookresearch/llama
+4
+
+total_pages: 77
+file_path: ./data/llama2.pdf
+source: 20
+
+4
+Safety
+WARNING: this section contains examples of text that may be considered unsafe, offensive, or upsetting.
+In this section, we dive deeper into the important topic of safety measurements and mitigations. We first
+discuss our safety investigations into pretraining data and pretrained models (Section 4.1). Next, we describe
+the process of our safety alignment (Section 4.2), explaining how we collected safety-related annotations and
+utilized SFT and RLHF, and present experimental results. Then, we discuss the red teaming we performed to
+further understand and improve model safety (Section 4.3). Finally, we present quantitative safety evaluations
+of Llama 2-Chat (Section 4.4). We also share a model card in the Appendix, in Table 52.
+4.1
+Safety in Pretraining
+It is important to understand what is in the pretraining data both to increase transparency and to shed
+light on root causes of potential downstream issues, such as potential biases. This can inform what, if any,
+downstream mitigations to consider, and help guide appropriate model use. In this section, we analyze the
+pretraining data for distributions of languages, demographic representations, and toxicity. We also present
+the results of testing the pretrained models on existing safety benchmarks.
+Steps Taken to Pretrain Responsibly.
+We followed Meta’s standard privacy and legal review processes for
+each dataset used in training. We did not use any Meta user data in training. We excluded data from certain
+sites known to contain a high volume of personal information about private individuals. We made a best
+effort to train our models efficiently to reduce the carbon footprint of pretraining (Section 2.2.1). Sharing our
+models broadly will reduce the need for others to train similar models. No additional filtering was conducted
+on the datasets, to allow Llama 2 to be more widely usable across tasks (e.g., it can be better used for hate
+speech classification), while avoiding the potential for the accidental demographic erasure sometimes caused
+by over-scrubbing. Importantly, this allows Llama 2-Chat to generalize more effectively during safety tuning
+with fewer examples (Welbl et al., 2021; Korbak et al., 2023; Xu et al., 2021). As a result, Llama 2 models
+should be used carefully and deployed only after significant safety tuning is applied.
+Demographic Representation: Pronouns.
+Bias in model generations may result from biases inherited
+from the training data itself. For instance, Bailey et al. (2022) shows that in massive text corpora, words
+representing “people” are often used in more similar contexts to words representing “men” than to words
+representing “women,” and Ganesh et al. (2023) demonstrates that a model’s performance on fairness metrics
+can be highly dependent on how the model trains on data representing underrepresented demographic
+groups. Within our English-language training corpus, we computed the frequencies of the most common
+English pronouns in Table 9a. We observe that He pronouns are generally overrepresented in documents
+compared to She pronouns, echoing similar frequency differences observed in pronominal usage for similarly
+sized model pretraining datasets (Chowdhery et al., 2022). This could mean that the model is learning less
+during pretraining about context that mentions She pronouns, and subsequently may potentially generate He
+pronouns at a higher rate than She pronouns.
+Demographic Representation: Identities.
+We also analyze the representation of different demographic
+groups in the pretraining data by measuring rates of usage of demographic identity terms from the HolisticBias
+dataset (Smith et al., 2022) as a proxy. We compute frequencies for each descriptor term in the pretraining
+corpus. We group descriptors into 5 axes (Religion, Gender and Sex, Nationality, Race and Ethnicity, and
+Sexual Orientation), and show the top 5 terms in each axis in Table 9b. In the top 5 terms, we remove a few
+terms such as “straight,” “white,” and “black,” because these terms have frequent uses beyond demographic
+mentions (e.g., as basic color terms). We also deduplicate across lists, removing a few terms found in
+both Gender and Sex and Sexual Orientation. For Gender and Sex, while She pronouns are mentioned
+in fewer documents, the term “female” is present in a larger percentage of documents.
+---------------------
+Given the context information and not prior knowledge, answer the query.
+Query: What are the potential risks associated with the use of Llama 2 as mentioned in the context?
+Answer: [/INST]
+
+INFO     WARPERS=                                                                                                            
+['TemperatureLogitsWarperCustom']
+
+Output generated in 2.71 seconds (59.87 tokens/s, 162 tokens, context 1880, seed 286398121)

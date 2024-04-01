@@ -1,0 +1,113 @@
+INFO     Loading "Mixtral-8x7B-instruct-exl2-6.0bpw"                                                                                     
+INFO     LOADER: "ExLlamav2_HF"                                                                                                          
+INFO     TRUNCATION LENGTH: 8000                                                                                                         
+INFO     INSTRUCTION TEMPLATE: "Custom (obtained from model metadata)"                                                                   
+INFO     Loaded the model in 24.37 seconds.                                                                                              
+INFO     GENERATE_PARAMS=                                                                                                                
+{   'max_new_tokens': 350,
+    'temperature': 1,
+    'temperature_last': False,
+    'dynamic_temperature': False,
+    'dynatemp_low': 1,
+    'dynatemp_high': 1,
+    'dynatemp_exponent': 1,
+    'smoothing_factor': 0,
+    'smoothing_curve': 1,
+    'top_p': 1,
+    'min_p': 0,
+    'top_k': 0,
+    'repetition_penalty': 1,
+    'presence_penalty': 0,
+    'frequency_penalty': 0,
+    'repetition_penalty_range': 1024,
+    'typical_p': 1,
+    'tfs': 1,
+    'top_a': 0,
+    'guidance_scale': 1,
+    'penalty_alpha': 0,
+    'mirostat_mode': 0,
+    'mirostat_tau': 5,
+    'mirostat_eta': 0.1,
+    'do_sample': True,
+    'encoder_repetition_penalty': 1,
+    'no_repeat_ngram_size': 0,
+    'min_length': 0,
+    'num_beams': 1,
+    'length_penalty': 1,
+    'early_stopping': False,
+    'use_cache': True,
+    'eos_token_id': [2],
+    'stopping_criteria': [   <modules.callbacks._StopEverythingStoppingCriteria object at 0x7f9d3832f0d0>],
+    'logits_processor': []}
+
+INFO     PROMPT=                                                                                                                         
+<s> [INST] What's Natural Language Processing? [/INST]
+
+INFO     WARPERS=                                                                                                                        
+[]
+
+Output generated in 4.19 seconds (43.71 tokens/s, 183 tokens, context 16, seed 651466910)
+
+
+INFO     GENERATE_PARAMS=                                                                                                                
+{   'max_new_tokens': 350,
+    'temperature': 1,
+    'temperature_last': False,
+    'dynamic_temperature': False,
+    'dynatemp_low': 1,
+    'dynatemp_high': 1,
+    'dynatemp_exponent': 1,
+    'smoothing_factor': 0,
+    'smoothing_curve': 1,
+    'top_p': 1,
+    'min_p': 0,
+    'top_k': 0,
+    'repetition_penalty': 1,
+    'presence_penalty': 0,
+    'frequency_penalty': 0,
+    'repetition_penalty_range': 1024,
+    'typical_p': 1,
+    'tfs': 1,
+    'top_a': 0,
+    'guidance_scale': 1,
+    'penalty_alpha': 0,
+    'mirostat_mode': 0,
+    'mirostat_tau': 5,
+    'mirostat_eta': 0.1,
+    'do_sample': True,
+    'encoder_repetition_penalty': 1,
+    'no_repeat_ngram_size': 0,
+    'min_length': 0,
+    'num_beams': 1,
+    'length_penalty': 1,
+    'early_stopping': False,
+    'use_cache': True,
+    'eos_token_id': [2],
+    'stopping_criteria': [   <modules.callbacks._StopEverythingStoppingCriteria object at 0x7f9d24472010>],
+    'logits_processor': []}
+
+INFO     PROMPT=                                                                                                                         
+<s> [INST] According to these documents:
+
+
+  will be solely determined by how components are laid out.
+In Haystack 1.x
+In Haystack 2.0-Beta
+Directed (Multi)Graphs (out with the acyclical)
+Haystack 1.x pipelines are implemented as directed acyclic graphs (DAGs). Massi’s analogy of it is that using a pipeline in Haystack 1.x is like going down a water slide. A very powerful 
+
+  that it actually provides, with many model providers and capabilities being seemingly “hidden” in larger concepts such as the PromptNode, or even the EmbeddingRetriever.
+With Haystack 2.0, our aim is to be a lot more explicit about what each component does, and (to possibly exploit an overused term) to make the 
+
+  end.
+In Haystack 2.0, we are getting rid of the A in DAG (acyclic), meaning we can have pipelines that can branch out, join, and also cycle back to another component. This allows us to set the Haystack framework up for pipelines that can retry, loop back, and potentially even run 
+
+
+Answer the given question: What do graphs have to do with Haystack?
+Answer: [/INST]
+
+INFO     WARPERS=                                                                                                                        
+
+[]
+
+Output generated in 5.27 seconds (41.90 tokens/s, 221 tokens, context 293, seed 90626156)
