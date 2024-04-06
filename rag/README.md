@@ -11,6 +11,8 @@
   * [Source](https://github.com/deepset-ai/haystack-cookbook/blob/main/notebooks/chroma-indexing-and-rag-examples.ipynb)
 * [2-mixtral-8x7b-for-web-qa](./haystack/2-mixtral-8x7b-for-web-qa.ipynb)
   * [Source](https://github.com/deepset-ai/haystack-cookbook/blob/main/notebooks/mixtral-8x7b-for-web-qa.ipynb)   
+* [27_first_rag_pipeline](./haystack/27_first_rag_pipeline.ipynb)
+  * [Source](https://haystack.deepset.ai/tutorials/27_first_rag_pipeline)
 
 ## langchain
 * [Retrieval-Augmented-Generation](./langchain/Retrieval-Augmented-Generation.ipynb)
