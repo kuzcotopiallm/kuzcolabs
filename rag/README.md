@@ -1,5 +1,3 @@
-# Question and Answering
-
 # Examples
 
 ## guidance
