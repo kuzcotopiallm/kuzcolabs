@@ -1,6 +1,11 @@
 # Question and Answering
 
 # Examples
+
+## guidance
+* [proverb](./guidance/proverb.ipynb)
+  * [Source](https://github.com/guidance-ai/guidance/blob/main/notebooks/proverb.ipynb)
+
 ## Haystack
 * [Chroma Index + Rag](./haystack/1-chroma-indexing-and-rag-examples.ipynb)
   * [Source](https://github.com/deepset-ai/haystack-cookbook/blob/main/notebooks/chroma-indexing-and-rag-examples.ipynb)
